@@ -35,6 +35,7 @@
     color: #03e4a1;
     background-clip: text;
     -webkit-background-clip: text;
+    white-space: nowrap;
   }
   
   #mainMenu {
@@ -44,6 +45,7 @@
     line-height: 60px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
   }
   
   header #mainMenu a {
@@ -77,12 +79,21 @@
 
   section ul li {
     margin-bottom: 25px;
+    list-style: none;
   }
 
   a{
     font-size: 20px;
     text-decoration: none;
-    color: #34dbc8;
+    color: black;
+    
+  }
+
+  ul li a:hover {
+    text-shadow: 1px 1px 1px #d7ea6c;
+    font-weight: bold;
+    font-size: 30px;
+    
   }
 
   .footer {

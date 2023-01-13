@@ -35,8 +35,25 @@
     color: #03e4a1;
     background-clip: text;
     -webkit-background-clip: text;
+    white-space: nowrap;
   }
   
+  
+   p {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+  li {
+    padding-right: 10px;
+    display: inline;
+  }
+  
+  a:focus{
+    border-bottom:5px solid rgba(10, 206, 183, 0.9);
+  }
+
   #mainMenu {
     position: absolute;
     bottom: 0;
@@ -44,6 +61,7 @@
     line-height: 60px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
   }
   
   #cabesa #mainMenu a {
@@ -68,10 +86,24 @@
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 0px;
     margin-bottom: 10px;
     font-weight: bold;
     text-shadow: 1px 1px 1px #e5f106;
+  }
+
+  #llistaImatges {
+    margin-bottom: 30px;
+  }
+
+  #caption{
+    margin: auto;
+    background-color: rgba(3, 228, 161, 0.5);
+    width: 500px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #c6f106
   }
 
   section article  {
@@ -92,8 +124,15 @@
     vertical-align: bottom;
   }
 
-  img{
-    max-width:max-content;
+  #imatge{
+    max-width:720px;
+    max-height: 720px;
+    border:5px solid #06afa7;
+  }
+
+  #llistaImatges img, #llistaImatges video {
+    width: 300px;
+    height: 300px;
   }
 
   .footer {

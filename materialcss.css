@@ -8,7 +8,7 @@
   }
   
   body {
-    background-color: #c3eef9;
+    
     font-family: helvetica, arial, sans-serif;
     font-size: 16px;
     padding-top: 330px;
@@ -22,6 +22,8 @@
     text-align: center;
     position: absolute;
     top: 0;
+    display: inline-flexbox;
+    flex-wrap: nowrap;
   }
   header h1 {
     font-size: 90px;
@@ -35,6 +37,8 @@
     color: #03e4a1;
     background-clip: text;
     -webkit-background-clip: text;
+    display: inline-flexbox;
+    white-space: nowrap;
   }
   
   #mainMenu {
@@ -44,6 +48,7 @@
     line-height: 60px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
   }
   
   header #mainMenu a {
@@ -54,6 +59,7 @@
     text-decoration: none;
     border-radius: 2px;
     font-size: 25px;
+    white-space: nowrap;
   }
   
   header nav a:hover {
@@ -72,11 +78,6 @@
     margin-bottom: 200px;
     width: 950px;
     display: grid;
-    grid-template-areas: "img1 item1 precio1"
-                         "img2 item2 precio2"
-                         "img3 item3 precio3"
-                         "img4 item4 precio4"
-                         "img4 item5 precio5";
     grid-template-columns: 1fr 1fr 1fr;  
     grid-template-rows: 1fr 1fr 1fr;                     
   }
@@ -87,7 +88,7 @@
 
 #lista img {
   grid-area: auto;
-  width: 150px;
+  width: fit-content;
   height: 150px;
   margin: auto;
   padding: 20px;
@@ -99,6 +100,7 @@
   text-decoration: none;
   margin: auto;
   font-size: 30px;
+  text-align: center;
 }
 
 #lista a:hover {
@@ -106,6 +108,7 @@
   font-weight: bold;
   font-size: 35px;
 }
+
 
 #lista p {
   margin: auto;
@@ -132,6 +135,7 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .footer li {
